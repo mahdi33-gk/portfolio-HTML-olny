@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/288dc013f9.js" crossorigin="anonymous"></script>
+
     <script>
         tailwind.config = {
           theme: {
@@ -25,24 +28,13 @@
 
 <body>
     <main class="bg-main-bg">
-        <header>
+        <header class="">
             <nav class="">
                 <div class="navbar bg-main-bg ">
                     <div class="navbar-start">
                       <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
+                            <i class="text-gray-400 fa-solid fa-square-caret-down"></i>
                         </div>
                         <ul
                           tabindex="0"
@@ -52,13 +44,13 @@
                           <li><a class=" border text-white">Contract</a></li>
                         </ul>
                       </div>
-                      <a class="btn btn-ghost text-3xl text-primarycr">Mehedi</a>
+                      <a class="btn btn-ghost text-3xl text-primarycr">&lt;Mehedi/&gt;</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1 ">
-                        <li><a class=" bg-primarycr rounded-full hover:text-white hover:border">About</a></li>
-                        <li><a class="ml-2 rounded-full bg-primarycr hover:text-white hover:border">Projects</a></li>
-                        <li><a class=" ml-2 border rounded-full text-white">Contractu</a></li>
+                        <li><a class=" bg-primarycr text-[8px] px-3 py-1 font-bold rounded-full hover:text-white hover:border">About</a></li>
+                        <li><a class="ml-2 text-[8px] rounded-full px-3 py-1 font-bold bg-primarycr hover:text-white hover:border">Projects</a></li>
+                        <li><a class=" ml-2 border text-[8px] rounded-full font-bold px-3 py-1 text-white">Contractu</a></li>
                       </ul>
                     </div>
                     <div class="navbar-end">
@@ -68,7 +60,7 @@
                           
                             <!-- sun icon -->
                             <svg
-                              class="swap-off h-10 w-10 text-white fill-current"
+                              class="swap-off h-10 w-10 text-gray-400 fill-current"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24">
                               <path
@@ -90,10 +82,64 @@
         </header>
 
         <!-- hero-bg -->
-         <section>
-            <div></div>
-            <div></div>
+         <section class="text-white mt-[100px] h-[550px] md:h-[360px] border-b-2 border-green-700">
+            <div class="flex w-10/12 text-center md:text-left gap-y-8  mt-10 px-auto m-auto justify-center items-center flex-col md:flex-row mb-20">
+                <!-- text section -->
+                <div class="">
+                    <p>GK Mehedi/Mahdi/Mehidy</p>
+                    <h2 class="text-[30px] md:text-[35px] mb-3 text-primarycr font-bold">Full stack Developer.</h2>
+                    <p class="md:text-left text-[10px] text-gray-400">I specialize in creating robust and scalable web applications by seamlessly integrating front-end and back-end technologies. <br> With expertise in full stack development, I transform ideas into functional, efficient,  and user-friendly  solutions. <br> My background in geoinformatics allows me to leverage spatial data to extract meaningful insights, making data-driven applications even more impactful.</p>
+                    
+                    <!-- buttons -->
+                    <div class="mt-5">
+                        <a class="px-4 rounded-md cursor-pointer text-gray-950 bg-primarycr">Get in Touch</a>
+                        <button class="ml-5 text-gray-400 text-[10px] text-center"><i class="text-[10px] text-primarycr fa-solid fa-circle"></i> Online</button>
+                    </div>
+                </div>
+                <!-- image section -->
+                <div class="flex justify-center items-center">
+                    <img class="border-primarycr rounded-full border-4 w-[60%]" src="puth.jpg" alt="">
+                </div>
+            </div>
          </section>
+
+
+         <!-- about me -->
+          <section class="mt-5">
+            <div class="flex w-10/12 gap-8 items-center mx-auto justify-center">
+                <!-- image -->
+                <div class="">
+                    <img class="w-60 border border-primarycr" src="puth.jpg" alt="">
+                </div>
+                <!-- text -->
+                <div>
+                    <h1 class="text-white font-bold text-3xl">About Me</h1>
+                    <p class="text-primarycr text-sm">__who am i?</p>
+                    <p class="text-[10px] text-gray-400 mt-3">I am currently a master’s student in Applied Geoinformatics <br> at the  University of Salzburg, Austria. I have a keen interest <br> in front-end and  GIS development. My goal is to use my <br> expertise in building exciting  and functional user interfaces. <br> Additionally, employ my geospatial  analysis, modeling, and process <br> automation  skills to engineer  innovative,  customizable, and sustainable software <br>   solutions. The following are tech stacks that I use regularly:</p>
+                    <div class="text-2xl mt-2">
+                        <i class="text-blue-400 fa-brands fa-react"></i>
+                        <i class="fa-brands text-yellow-400 fa-python"></i>
+                        <i class="text-yellow-400 fa-brands fa-js"></i>
+                        <i class="text-orange-400 fa-brands fa-html5"></i>
+                        <i class="fa-brands text-blue-400 fa-css3-alt"></i>
+                        <i class="fa-brands text-orange-950 fa-git-alt"></i>
+                        <i class="fa-brands text-blue-300 fa-bootstrap"></i>
+                    </div>
+                    <button class="text-primarycr text-[9px] px-3 py-1 border-primarycr border-2">DOWNLOAD</button>
+                </div>
+            </div>
+
+            <!-- project -->
+             <div class="text-white mt-10 ">
+                <h1>Projects</h1>
+             </div>
+
+
+
+          </section>
+
+
+
     </main>
 </body>
 </html>
