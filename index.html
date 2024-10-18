@@ -18,7 +18,9 @@
               colors: {
                 clifford: '#da373d',
                 'primarycr': 'rgb(85, 229, 164)',
-                'main-bg': 'rgb(21, 28, 37)'
+                'main-bg': 'rgb(21, 28, 37)',
+                'main-br': 'rgb(85, 229, 164)',
+                'card-bg': 'rgb(38, 49, 63)',
               }
             }
           }
@@ -40,8 +42,8 @@
                           tabindex="0"
                           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                           <li><a class="bg-primarycr  hover:text-white hover:border">About</a></li>
-                          <li><a class=" ml-2 bg-primarycr hover:text-white hover:border">Projects</a></li>
-                          <li><a class=" border text-white">Contract</a></li>
+                          <li><a class="mt-1 bg-primarycr hover:text-white hover:border">Projects</a></li>
+                          <li><a class="mt-1 border bg-primarycr hover:text-white hover:border ">Contract</a></li>
                         </ul>
                       </div>
                       <a class="btn btn-ghost text-3xl text-primarycr">&lt;Mehedi/&gt;</a>
@@ -82,7 +84,7 @@
         </header>
 
         <!-- hero-bg -->
-         <section class="text-white mt-[100px] h-[550px] md:h-[360px] border-b-2 border-green-700">
+         <section class="text-white mt-[100px] h-[530px] md:h-[360px] border-b-2 border-green-700">
             <div class="flex w-10/12 text-center md:text-left gap-y-8  mt-10 px-auto m-auto justify-center items-center flex-col md:flex-row mb-20">
                 <!-- text section -->
                 <div class="">
@@ -105,8 +107,8 @@
 
 
          <!-- about me -->
-          <section class="mt-5">
-            <div class="flex w-10/12 gap-8 items-center mx-auto justify-center">
+          <section class="mt-20 border-primarycr border-b-2 ">
+            <div class="flex w-10/12 flex-col md:flex-row gap-8 items-center mx-auto justify-center">
                 <!-- image -->
                 <div class="">
                     <img class="w-60 border border-primarycr" src="puth.jpg" alt="">
@@ -115,8 +117,8 @@
                 <div>
                     <h1 class="text-white font-bold text-3xl">About Me</h1>
                     <p class="text-primarycr text-sm">__who am i?</p>
-                    <p class="text-[10px] text-gray-400 mt-3">I am currently a master’s student in Applied Geoinformatics <br> at the  University of Salzburg, Austria. I have a keen interest <br> in front-end and  GIS development. My goal is to use my <br> expertise in building exciting  and functional user interfaces. <br> Additionally, employ my geospatial  analysis, modeling, and process <br> automation  skills to engineer  innovative,  customizable, and sustainable software <br>   solutions. The following are tech stacks that I use regularly:</p>
-                    <div class="text-2xl mt-2">
+                    <p class="text-[10px] text-gray-400 md:mt-1 mt-3">I am currently a master’s student in Applied Geoinformatics <br class="hidden md:md:block"> at the  University of Salzburg, Austria. I have a keen interest <br class="hidden md:md:block"> in front-end and  GIS development. My goal is to use my <br class="hidden md:md:block"> expertise in building exciting  and functional user interfaces. <br class="hidden md:md:block"> Additionally, employ my geospatial  analysis, modeling, and <br class="hidden md:md:block"> process automation  skills to engineer  innovative, <br class="hidden md:md:block"> customizable, and sustainable software   solutions. The <br class="hidden md:md:block"> following are tech stacks that I use regularly:</p>
+                    <div class="text-2xl mt-3 md:mt-1">
                         <i class="text-blue-400 fa-brands fa-react"></i>
                         <i class="fa-brands text-yellow-400 fa-python"></i>
                         <i class="text-yellow-400 fa-brands fa-js"></i>
@@ -125,13 +127,201 @@
                         <i class="fa-brands text-orange-950 fa-git-alt"></i>
                         <i class="fa-brands text-blue-300 fa-bootstrap"></i>
                     </div>
-                    <button class="text-primarycr text-[9px] px-3 py-1 border-primarycr border-2">DOWNLOAD</button>
+                    <button class="text-primarycr text-[9px] mt-3 md:mt-1 px-3 py-1 border-primarycr border-2">DOWNLOAD</button>
                 </div>
             </div>
 
             <!-- project -->
-             <div class="text-white mt-10 ">
-                <h1>Projects</h1>
+             <div class="text-white mt-[100px] w-10/12 mx-auto ">
+                <h1 class="text-center text-3xl font-bold">Projects</h1>
+                <div class="flex justify-center items-center mt-3 gap-3">
+                  <button class="text-[9px] mt-3 px-3 py-1 bg-main-br text-black">All Projects</button>
+                  <button class="text-[9px] mt-3 px-3 py-1 border-main-br border-2">Fronted</button>
+                  <button class="text-[9px] mt-3 px-3 py-1 border-main-br border-2">Backend</button>
+                </div>
+
+                <!-- cards -->
+                 <div class="mt-6">
+                  <div class="flex justify-center items-center gap-4 flex-wrap mb-6">
+                    <div class="card w-[130px] md:w-[250px] bg-card-bg  shadow-xl">
+                      <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="flex flex-col justify-center items-center">
+                        <h2 class="card-title text-white text-left md:text-2xl">
+                          Shop!
+                          
+                        </h2>
+                        <p class="text-[9px] md:text-[11px] text-gray-400 px-3">If a dogf hfgf hgh chews shoes whose shoes does?</p>
+                        <p class="text-[10px] text-center md:text-[12px] mt-1">Technologies Used</p>
+                        <div class="text-[9px] md:text-[20px]">
+                          <i class="text-blue-400 fa-brands fa-react"></i>
+                          <i class="ml-1 text-yellow-400 fa-brands fa-js"></i>
+                          <i class="ml-1  fa-brands text-blue-300 fa-bootstrap"></i>
+
+                        </div>
+                        <div class="flex flex-row gap-2 md:mb-3 mb-2 md:mt-2">
+                          <div class="badge badge-outline md:text-[13px] text-[5px] md:py-2 md:px-3 text-black bg-main-br ">Live Demo</div>
+                          <div class="badge badge-outline border md:text-[13px] md:py-2 md:px-3 border-white text-[5px] text-white">Live site</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card w-[130px] md:w-[250px] bg-card-bg  shadow-xl">
+                      <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="flex flex-col justify-center items-center">
+                        <h2 class="card-title text-white text-left md:text-2xl">
+                          Shop!
+                          
+                        </h2>
+                        <p class="text-[9px] md:text-[11px] text-gray-400 px-3">If a dogf hfgf hgh chews shoes whose shoes does?</p>
+                        <p class="text-[10px] text-center md:text-[12px] mt-1">Technologies Used</p>
+                        <div class="text-[9px] md:text-[20px]">
+                          <i class="text-blue-400 fa-brands fa-react"></i>
+                          <i class="ml-1 text-yellow-400 fa-brands fa-js"></i>
+                          <i class="ml-1  fa-brands text-blue-300 fa-bootstrap"></i>
+
+                        </div>
+                        <div class="flex flex-row gap-2 md:mb-3  mb-2 md:mt-2">
+                          <div class="badge badge-outline md:text-[13px] text-[5px] md:py-2 md:px-3 text-black bg-main-br">Live Demo</div>
+                          <div class="badge badge-outline border md:text-[13px] md:py-2 md:px-3 border-white text-[5px] text-white">Live site</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card w-[130px] md:w-[250px] bg-card-bg  shadow-xl">
+                      <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="flex flex-col justify-center items-center">
+                        <h2 class="card-title text-white text-left md:text-2xl">
+                          Shop!
+                          
+                        </h2>
+                        <p class="text-[9px] md:text-[11px] text-gray-400 px-3">If a dogf hfgf hgh chews shoes whose shoes does?</p>
+                        <p class="text-[10px] text-center md:text-[12px] mt-1">Technologies Used</p>
+                        <div class="text-[9px] md:text-[20px]">
+                          <i class="text-blue-400 fa-brands fa-react"></i>
+                          <i class="ml-1 text-yellow-400 fa-brands fa-js"></i>
+                          <i class="ml-1  fa-brands text-blue-300 fa-bootstrap"></i>
+
+                        </div>
+                        <div class="flex flex-row gap-2 md:mb-3  mb-2 md:mt-2">
+                          <div class="badge badge-outline md:text-[13px] text-[5px] md:py-2 md:px-3 text-black bg-main-br">Live Demo</div>
+                          <div class="badge badge-outline border md:text-[13px] md:py-2 md:px-3 border-white text-[5px] text-white">Live site</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card w-[130px] md:w-[250px] bg-card-bg  shadow-xl">
+                      <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="flex flex-col justify-center items-center">
+                        <h2 class="card-title text-white text-left md:text-2xl">
+                          Shop!
+                          
+                        </h2>
+                        <p class="text-[9px] md:text-[11px] text-gray-400 px-3">If a dogf hfgf hgh chews shoes whose shoes does?</p>
+                        <p class="text-[10px] text-center md:text-[12px] mt-1">Technologies Used</p>
+                        <div class="text-[9px] md:text-[20px]">
+                          <i class="text-blue-400 fa-brands fa-react"></i>
+                          <i class="ml-1 text-yellow-400 fa-brands fa-js"></i>
+                          <i class="ml-1  fa-brands text-blue-300 fa-bootstrap"></i>
+
+                        </div>
+                        <div class="flex flex-row gap-2 md:mb-3  mb-2 md:mt-2">
+                          <div class="badge badge-outline md:text-[13px] text-[5px] md:py-2 md:px-3 text-black bg-main-br">Live Demo</div>
+                          <div class="badge badge-outline border md:text-[13px] md:py-2 md:px-3 border-white text-[5px] text-white">Live site</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card w-[130px] md:w-[250px] bg-card-bg  shadow-xl">
+                      <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="flex flex-col justify-center items-center">
+                        <h2 class="card-title text-white text-left md:text-2xl">
+                          Shop!
+                          
+                        </h2>
+                        <p class="text-[9px] md:text-[11px] text-gray-400 px-3">If a dogf hfgf hgh chews shoes whose shoes does?</p>
+                        <p class="text-[10px] text-center md:text-[12px] mt-1">Technologies Used</p>
+                        <div class="text-[9px] md:text-[20px]">
+                          <i class="text-blue-400 fa-brands fa-react"></i>
+                          <i class="ml-1 text-yellow-400 fa-brands fa-js"></i>
+                          <i class="ml-1  fa-brands text-blue-300 fa-bootstrap"></i>
+
+                        </div>
+                        <div class="flex flex-row gap-2 md:mb-3  mb-2 md:mt-2">
+                          <div class="badge badge-outline md:text-[13px] text-[5px] md:py-2 md:px-3 text-black bg-main-br">Live Demo</div>
+                          <div class="badge badge-outline border md:text-[13px] md:py-2 md:px-3 border-white text-[5px] text-white">Live site</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card w-[130px] md:w-[250px] bg-card-bg  shadow-xl">
+                      <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="flex flex-col justify-center items-center">
+                        <h2 class="card-title text-white text-left md:text-2xl">
+                          Shop!
+                          
+                        </h2>
+                        <p class="text-[9px] md:text-[11px] text-gray-400 px-3">If a dogf hfgf hgh chews shoes whose shoes does?</p>
+                        <p class="text-[10px] text-center md:text-[12px] mt-1">Technologies Used</p>
+                        <div class="text-[9px] md:text-[20px]">
+                          <i class="text-blue-400 fa-brands fa-react"></i>
+                          <i class="ml-1 text-yellow-400 fa-brands fa-js"></i>
+                          <i class="ml-1  fa-brands text-blue-300 fa-bootstrap"></i>
+
+                        </div>
+                        <div class="flex flex-row gap-2 md:mb-3  mb-2 md:mt-2">
+                          <div class="badge badge-outline md:text-[13px] text-[5px] md:py-2 md:px-3 text-black bg-main-br">Live Demo</div>
+                          <div class="badge badge-outline border md:text-[13px] md:py-2 md:px-3 border-white text-[5px] text-white">Live site</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card w-[130px] md:w-[250px] bg-card-bg  shadow-xl">
+                      <figure>
+                        <img
+                          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          alt="Shoes" />
+                      </figure>
+                      <div class="flex flex-col justify-center items-center">
+                        <h2 class="card-title text-white text-left md:text-2xl">
+                          Shop!
+                          
+                        </h2>
+                        <p class="text-[9px] md:text-[11px] text-gray-400 px-3">If a dogf hfgf hgh chews shoes whose shoes does?</p>
+                        <p class="text-[10px] text-center md:text-[12px] mt-1">Technologies Used</p>
+                        <div class="text-[9px] md:text-[20px]">
+                          <i class="text-blue-400 fa-brands fa-react"></i>
+                          <i class="ml-1 text-yellow-400 fa-brands fa-js"></i>
+                          <i class="ml-1  fa-brands text-blue-300 fa-bootstrap"></i>
+
+                        </div>
+                        <div class="flex flex-row gap-2 md:mb-3  mb-2 md:mt-2">
+                          <div class="badge badge-outline md:text-[13px] text-[5px] md:py-2 md:px-3 text-black bg-main-br">Live Demo</div>
+                          <div class="badge badge-outline border md:text-[13px] md:py-2 md:px-3 border-white text-[5px] text-white">Live site</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                   
+                  </div>
+                 </div>
              </div>
 
 
@@ -139,7 +329,116 @@
           </section>
 
 
+          <!-- get in touch -->
+          <section class="md:mt-12 mt-20">
+            <div>
+              <h1 class=" text-3xl font-bold text-white text-center">Get in Touch</h1>
+            </div>
+            <div>
+              
+              
+              <div class="hero bg-main-bg min-h-screen  ">
+                
+                <div class="hero-content flex-col lg:flex-row-reverse mt-8">
+                  
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Name</span>
+                        </label>
+                        <input type="Name" placeholder="Your name " class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="Your email" placeholder="Email" class="input input-bordered" required />
+                        
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Message</span>
+                        </label>
+                        <input type="text" placeholder="Write your message" class="input" required />
+                        
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn bg-main-br"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="text-center lg:text-left">
+                    <h1 class="text-4xl text-gray-400 font-bold">Lets discuss on something <span class="text-main-br">cool</span> together !</h1>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
 
     </main>
+
+
+    <footer>
+      <footer class="footer bg-card-bg text-neutral-content  p-10">
+        <aside>
+          <h1 class="text-4xl text-primarycr font-bold">&lt;Mehedi/&gt;</h1>
+          <p>
+            Tangail Polytechnic Institute.
+            <br />
+            Providing reliable tech since 2022
+          </p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Social</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
+      <footer class=" footer bg-card-bg text-neutral-content items-center p-4 justify-center">
+        <aside class="grid-flow-col items-center">
+          
+          <p> ©2024 Mehedi  - All right reserved</p>
+        </aside>
+        
+      </footer>
+    </footer>
 </body>
 </html>
