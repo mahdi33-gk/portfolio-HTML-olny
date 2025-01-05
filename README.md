@@ -14,5 +14,4 @@ This is a portfolio website designed to showcase your skills, projects, and expe
 
 - **HTML5**: For the website's structure.
 - **CSS3**: For styling and layout.
-- **JavaScript**: For interactive elements.
 - **[Framework/Library Name, e.g., Tailwind CSS]**: For enhanced design and functionality.
